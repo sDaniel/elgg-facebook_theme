@@ -145,9 +145,8 @@ img {max-width:100%}
 }
 
 #facebook-header-login .elgg-menu {
-position: absolute;
-margin-left: -160px;
-margin-top: 20px;
+	position: absolute;
+	margin-left: -160px;
 }
 
 #facebook-header-login .elgg-menu > li {

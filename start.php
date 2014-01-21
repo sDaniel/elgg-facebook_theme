@@ -335,15 +335,13 @@ function facebook_theme_pagesetup_handler() {
 		));
 
 		elgg_unregister_menu_item('topbar', 'administration');
-		if (elgg_is_admin_logged_in()) { 
-                    elgg_register_menu_item('topbar', array(
-                            'href' => '/admin',
-                            'name' => 'administration',
-                            'parent_name' => 'account',
-                            'section' => 'alt',
-                            'text' => elgg_echo('admin'),
-                    ));
-                }
+		elgg_register_menu_item('topbar', array(
+			'href' => '/admin',
+			'name' => 'administration',
+			'parent_name' => 'account',
+			'section' => 'alt',
+			'text' => elgg_echo('admin'),
+		));
 		
 		if (elgg_is_active_plugin('notifications')) {
 			elgg_register_menu_item('topbar', array(
